@@ -24,7 +24,7 @@ const Blog = () => {
         formData.append('category', blog.category)
         formData.append('description', blog.data)
 
-        fetch('https:http://localhost:5000/addBlog', {
+        fetch('https://salty-crag-51307.herokuapp.com/addBlog', {
             method: 'POST',
             body: formData
         })

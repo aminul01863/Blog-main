@@ -7,13 +7,13 @@ import Sidebar from '../Sidebar/Sidebar';
 const ManageService = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://salty-crag-51307.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
 
     const deleteEvent = id => {
-        fetch(`http://localhost:5000/deleteEvent/${id}`, {
+        fetch(`https://salty-crag-51307.herokuapp.com/deleteEvent/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

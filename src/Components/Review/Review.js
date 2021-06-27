@@ -18,7 +18,7 @@ const Review = () => {
         formData.append("profession", review.profession);
         formData.append("description", review.data);
 
-        fetch("http://localhost:5000/addReview", {
+        fetch("https://salty-crag-51307.herokuapp.com/addReview", {
             method: "POST",
             body: formData,
         })
